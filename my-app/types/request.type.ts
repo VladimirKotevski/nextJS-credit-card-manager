@@ -1,0 +1,1 @@
+export type Methods = "head" | "options" | "put" | "post" | "patch" | "delete" | "get";

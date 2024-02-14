@@ -1,0 +1,20 @@
+{
+    "cards": [
+        {
+            "id": "0dc3678c-552a-4d45-912f-6f7f9583026d",
+            "name": "John Cabruci",
+            "cardNumber": "5521223455141014",
+            "cvc": "555",
+            "expiryDate": "05/26",
+            "type": "mastercard"
+        },
+        {
+            "id": "83546ea8-7d7a-47e4-86d1-d1bcfbba9df6",
+            "name": "John Cabruci",
+            "cardNumber": "5621123466142214",
+            "cvc": "456",
+            "expiryDate": "11/25",
+            "type": "visa"
+        }
+    ]
+}

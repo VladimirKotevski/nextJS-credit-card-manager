@@ -1,0 +1,1 @@
+export type ApiInstances = Record<string, any>

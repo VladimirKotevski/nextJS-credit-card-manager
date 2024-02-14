@@ -1,0 +1,261 @@
+ @import 'variables';
+
+ .main {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+ }
+
+ .card-list {
+
+   h1 {
+     color: $purple;
+     font-weight: 900;
+     margin: 10px 15px;
+
+   }
+
+   p {
+     color: $grey-50;
+     font-size: $font-size-14;
+     margin: 0 15px;
+   }
+
+   .mastercard {
+     background-color: $purple;
+
+     .card-header {
+
+       span {
+         color: $white !important;
+       }
+
+     }
+
+   }
+
+   .visa {
+     background-color: $light-blue;
+
+     .card-number {
+
+       p {
+         color: $grey-90;
+       }
+     }
+
+
+   }
+
+   .credit-card {
+     border-radius: $border-radius-12;
+     margin: $space-16;
+     padding: 20px;
+     background-image: url("../public/card-background-shape.svg");
+     background-position: right;
+     width: 270px;
+
+     p {
+       color: $white;
+       font-weight: 600;
+       font-size: $font-size-14;
+     }
+
+
+     .card-header {
+       display: flex;
+       padding-bottom: $space-24;
+
+       span {
+         font-size: $font-size-14;
+         font-weight: 600;
+         color: $grey-90;
+
+       }
+
+       .card-cvc {
+         width: 100%;
+         text-align: right;
+         justify-content: end;
+         display: flex;
+
+         p {
+           margin: 0;
+           padding-bottom: 5px;
+         }
+
+         .cvc-item {
+           padding: 0 20px;
+         }
+
+       }
+
+     }
+
+     .card-name {
+
+       p {
+         margin: 0;
+         padding-bottom: 10px;
+       }
+
+     }
+
+     .card-number {
+       display: flex;
+
+       p {
+         margin: 0;
+         width: 100%;
+       }
+
+       .edit-icon {
+         text-align: right;
+         justify-content: end;
+       }
+     }
+
+   }
+
+   .create-div {
+     text-align: center;
+
+     .create-button {
+       width: 90%;
+       padding: 12px;
+       border-radius: $border-radius-24;
+       border: none;
+       background-color: $purple;
+
+       span {
+         color: $white;
+         font-weight: 600;
+       }
+     }
+   }
+
+ }
+
+ .card-editor {
+
+   .field-wraper {
+     display: grid;
+     padding: 10px 0;
+
+
+     label {
+       font-size: 13px;
+       font-weight: 600;
+       padding-bottom: 5px;
+
+     }
+
+     .form-input-filed {
+       border: none;
+       border-bottom: 1px solid;
+       padding: 10px 0;
+       width: 90%;
+
+       &:focus-visible {
+         outline: none;
+       }
+     }
+
+
+   }
+
+   .form-buttons {
+
+     padding-top: $space-24;
+     text-align: center;
+
+     .submit-button {
+       width: 100%;
+       padding: 12px;
+       border-radius: $border-radius-24;
+       border: none;
+       background-color: $purple;
+
+       span {
+         color: $white;
+         font-weight: 600;
+       }
+     }
+
+   }
+ }
+
+ .modal-overlay {
+
+   position: fixed;
+   overflow: auto;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.5);
+
+   .modal-wrapper {
+     max-height: calc(100vh - 100px);
+     min-width: 410px;
+
+     .modal {
+
+       background: $white;
+       height: 100%;
+       width: 100%;
+       border-radius: $border-radius-16;
+
+       .modal-header {
+         display: block;
+         justify-content: flex-end;
+         padding: 10px 35px 10px 35px;
+
+         a {
+           float: right;
+           font-size: 18px;
+           text-decoration: none;
+           font-weight: 900;
+           color: #000
+         }
+
+         h4 {
+           font-size: $font-size-20;
+           color: #000;
+           margin: 0;
+           padding: 15px 0;
+           font-weight: 900;
+         }
+
+         @media (max-width: 700px) {
+           padding: 10px 15px 10px 15px;
+         }
+       }
+
+       .modal-body {
+         padding: 0px 35px 60px 35px;
+
+         @media (max-width: 700px) {
+           padding: 0px 15px 60px 15px;
+         }
+       }
+
+     }
+
+   }
+
+   .create-div {
+     display: none;
+   }
+
+   .edit-icon {
+     display: none;
+   }
+
+ }
